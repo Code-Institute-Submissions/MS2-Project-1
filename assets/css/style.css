@@ -11,6 +11,10 @@
     margin-top: 70px;
 }
 
+#instructions h3 {
+    text-decoration: underline;
+}
+
 /*----------- https://codepen.io/yourpalnurav/pen/LqNmzL ---------------*/
 
 .underlined-a {

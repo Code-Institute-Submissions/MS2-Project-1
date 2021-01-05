@@ -3,6 +3,8 @@ const topRight = document.querySelector('.box2');
 const bottomLeft = document.querySelector('.box3');
 const bottomRight = document.querySelector('.box4');
 
+const level = document.getElementById('#level');
+
 
 const getRandomBox = () => {
 
@@ -42,10 +44,11 @@ const boxClicked = boxClicked => {
       sequence.push(getRandomBox());
       sequenceToGuess = [...sequence];
       startFlashing();
+      level.push += 1;
     }
   } else {
     // end game
-    alert('game over');
+    gameOver(game);
   }
 };
 
@@ -58,3 +61,6 @@ const startFlashing = async () => {
 };
 
 startFlashing();
+
+
+
