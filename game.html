@@ -7,19 +7,16 @@
         <title>Memory Game</title>
     </head>
     <body>
-        <div class="blocks fadeIn animated">
-            <div class="row">
-              <div class="block block1" onclick="game.userSendInput('1')">1 </div>
-              <div class="block block2" onclick="game.userSendInput('2')">2 </div>
-            </div>
-            <div class="row">
-              <div class="block block3" onclick="game.userSendInput('3')">3 </div>
-              <div class="block block4" onclick="game.userSendInput('4')">4</div>
-            </div>
-            <div class="row">
-              <div class="inputStatus"></div>
-            </div>
-          </div>
+      <div class="game-container">
+        <div>
+          <div onclick="boxClicked(event.currentTarget)" class="box box1"></div>
+          <div onclick="boxClicked(event.currentTarget)" class="box box2"></div>
+        </div>
+        <div>
+          <div onclick="boxClicked(event.currentTarget)" class="box box3"></div>
+          <div onclick="boxClicked(event.currentTarget)" class="box box4"></div>
+        </div>
+      </div>
     </body>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/game.js"></script>

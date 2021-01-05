@@ -1,0 +1,39 @@
+body {
+    text-align: center;
+}
+
+.game-container {
+    margin-top: 250px;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.box:hover {
+    box-shadow: inset 0px 0px 0px 3px white;
+    box-sizing: border-box;
+}
+
+.box1 {
+    background-color: red;
+}
+
+.box2 {
+    background-color: blue;
+}
+
+.box3 {
+    background-color: yellow;
+}
+
+.box4 {
+    background-color: green;
+}
+
+.active {
+    background-color: white;
+}

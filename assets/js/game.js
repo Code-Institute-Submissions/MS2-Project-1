@@ -1,14 +1,59 @@
-let sequence = [];
+const topLeft = document.querySelector('.box1');
+const topRight = document.querySelector('.box2');
+const bottomLeft = document.querySelector('.box3');
+const bottomRight = document.querySelector('.box4');
 
-let humanSequence = [];
+const getRandomBox = () => {
 
-const startButton = document.querySelector('.js-start');
-const info = document.querySelector('.js-info');
+  const boxes = [topLeft, topRight, bottomLeft, bottomRight]
 
-function playGame() {
-  startButton.classList.add('hidden');
-  info.classList.remove('hidden');
-  info.textContent = 'Wait for the computer';
-}
+  return boxes[parseInt(Math.random() * boxes.length)];
+};
 
-startButton.addEventListener('click', startGame);
+const sequence = [getRandomBox()];
+
+let sequenceToGuess = [...sequence];
+
+const flash = (box) => {
+  return new Promise((resolve, reject) => {
+    box.className += ' active';
+    setTimeout (() => {
+      box.className = box.className.replace(
+        'active',
+        ''
+      );
+      setTimeout(() => {
+        resolve();
+      }, 250);
+    }, 1000);
+  });
+};
+
+let canClick = false;
+
+const boxClicked = boxClicked => {
+  if (!canClick) return;
+
+  const expectedBox = sequenceToGuess.shift();
+  if (expectedBox === boxClicked) {
+    if (sequenceToGuess.length === 0) {
+      // start new round
+      sequence.push(getRandomBox());
+      sequenceToGuess = [...sequence];
+      startFlashing();
+    }
+  } else {
+    // end game
+    alert('game over');
+  }
+};
+
+const startFlashing = async () => {
+  canClick = false;
+  for (const box of sequence) {
+    await flash(box);
+  }
+  canClick = true;
+};
+
+startFlashing();
