@@ -48,7 +48,7 @@ const boxClicked = boxClicked => {
     }
   } else {
     // end game
-    gameOver(game);
+    alert('game over');
   }
 };
 

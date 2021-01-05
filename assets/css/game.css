@@ -1,6 +1,8 @@
 body {
     text-align: center;
     background-image: linear-gradient(rgb(134, 77, 160), rgb(28, 19, 34));
+    height: 100%;
+    width: 100%;
 }
 
 #level {
@@ -68,11 +70,12 @@ body {
 }
 
 #newGame {
-    margin-top: 70px;
+    margin-top: 50px;
     cursor: pointer;
 }
 
 #resetGame {
-    margin-top: 70px;
     cursor: pointer;
 }
+
+
