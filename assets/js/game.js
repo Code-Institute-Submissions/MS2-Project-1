@@ -3,6 +3,7 @@ const topRight = document.querySelector('.box2');
 const bottomLeft = document.querySelector('.box3');
 const bottomRight = document.querySelector('.box4');
 
+
 const getRandomBox = () => {
 
   const boxes = [topLeft, topRight, bottomLeft, bottomRight]
