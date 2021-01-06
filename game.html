@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,7 +9,7 @@
         <title>Simon Game</title>
     </head>
     <body>
-      <div class="container-game col-12 col-sm">
+      <div class="container-game">
         <div class="row">
           <div id="level" class="brk-btn col-6 mx-auto d-block">level: <span>0</span></div>
         </div>
@@ -28,14 +29,13 @@
           <div class="gameBtn">
             <button type="reset" value="New Game" id="newGame" onClick='playGame()' class="brk-btn m-2">Start</button>
             <button type="reset" value="New Game" id="resetGame" onClick='playGame()' class="brk-btn m-2">Reset</button>
-        </div>
+          </div>
         </div>
       </div>
-
+      <script src="assets/js/script.js"></script>
+      <script src="assets/js/game.js"></script>
     </body>
     <footer>
 
     </footer>
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/game.js"></script>
 </html>
