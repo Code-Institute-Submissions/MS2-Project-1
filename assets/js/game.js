@@ -4,6 +4,7 @@ const bottomLeft = document.querySelector('.box3');
 const bottomRight = document.querySelector('.box4');
 const level = document.getElementById('#level');
 const flashTime = 250;
+const flashTimer = 1000;
 let score = 0;
 let canClick = false;
 // Populated on reset
@@ -39,7 +40,7 @@ const flash = (box) => {
             setTimeout(() => {
                 resolve();
             }, flashTime);
-        }, 1000);
+        }, flashTimer);
     });
 };
 

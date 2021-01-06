@@ -14,6 +14,10 @@
     text-decoration: underline;
 }
 
+#instructions h5 {
+    padding: 5px;
+}
+
 /*----------- https://codepen.io/yourpalnurav/pen/LqNmzL ---------------*/
 
 .underlined-a {
