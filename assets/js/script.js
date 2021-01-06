@@ -1,9 +1,9 @@
 function playGame() {
     window.open("game.html", "_self")
 
-    startFlashing();
-    
-    setTimeout(function(){ alert("After 5 seconds!"); }, 50000);
+    setTimeout(() => {
+      
+    }, 5000);
   }
   
 

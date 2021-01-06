@@ -1,6 +1,5 @@
 .playBtn {
-    padding-left: 35%;
-    padding-top: 600px;
+    padding-top: 400px;
     align-items: center;
     width: 500px;
     height: 50px;
@@ -8,7 +7,7 @@
 }
 
 #instructions {
-    margin-top: 70px;
+    margin-top: 60px;
 }
 
 #instructions h3 {

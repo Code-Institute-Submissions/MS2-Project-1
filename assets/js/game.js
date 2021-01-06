@@ -42,9 +42,9 @@ const boxClicked = boxClicked => {
     if (sequenceToGuess.length === 0) {
       // start new round
       sequence.push(getRandomBox());
+      level.push + (1)
       sequenceToGuess = [...sequence];
       startFlashing();
-      level.push += 1;
     }
   } else {
     // end game

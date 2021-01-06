@@ -13,20 +13,25 @@
           <div id="level" class="brk-btn col-6 mx-auto d-block">level: <span>0</span></div>
         </div>
         <div class="game-container">
-          <div class="col">
+          <div class="col-sm-12">
             <div onclick="boxClicked(event.currentTarget)" class="box box1"></div>
             <div onclick="boxClicked(event.currentTarget)" class="box box2"></div>
           </div>
-          <div class="col">
+          <div class="col-sm-12">
             <div onclick="boxClicked(event.currentTarget)" class="box box3"></div>
             <div onclick="boxClicked(event.currentTarget)" class="box box4"></div>
           </div>
         </div>
       </div>
-        <div class="gameBtn">
-            <button type="reset" value="New Game" id="newGame" onClick='playGame()' class="brk-btn me-5">Start</button>
-            <button type="reset" value="New Game" id="resetGame" onClick='playGame()' class="brk-btn ms-5">Reset</button>
+      <div class="btnContainer col-xl-12">
+        <div class="row">
+          <div class="gameBtn">
+            <button type="reset" value="New Game" id="newGame" onClick='playGame()' class="brk-btn m-5">Start</button>
+            <button type="reset" value="New Game" id="resetGame" onClick='playGame()' class="brk-btn m-5">Reset</button>
         </div>
+        </div>
+      </div>
+
     </body>
     <footer>
 
