@@ -100,13 +100,14 @@ body {
 
 #pop-up {
     display: none;
-    position:absolute;
-    top:50%;
-    left:50%;
-    width:400px;  /* adjust as per your needs */
-    height:400px;   /* adjust as per your needs */
-    margin-left:-200px;   /* negative half of width above */
-    margin-top:-200px;   /* negative half of height above */
+    position: absolute;
+    bottom: 25%;
+    right: 27%;
+    width: 30em;
+    height: 20em;
+    z-index: 9;
+    padding: 10px;
+    text-align: center;
     background: rgba(255, 255, 255, 0.5);
     font-size: 30px;
 }
@@ -122,29 +123,32 @@ body {
     font-size: 50px;
 }
 
-
-/*
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
     #pop-up {
-        width: 300px;
-        height: 500px;
-        z-index: 9;
-        margin-bottom: 50px;
-        padding-bottom: 220px;
+        display: none;
+        position:absolute;
+        top:50%;
+        left:50%;
+        width:400px;  /* adjust as per your needs */
+        height:400px;   /* adjust as per your needs */
+        margin-left:-200px;   /* negative half of width above */
+        margin-top:-350px;   /* negative half of height above */
+        background: rgba(255, 255, 255, 0.5);
+        font-size: 24px;
     }
   }
 
-  */
-
-@media screen and (max-width: 600px) {
+  @media screen and (max-width: 1200px) {
     #pop-up span {
-        font-size: 15px;
-
-    }
-}
-
-@media screen and (max-width: 600px) {
-    #pop-up span h3 {
         font-size: 20px;
+        margin-bottom: 150px;
     }
 }
+
+@media screen and (max-width: 1200px) {
+    #pop-up span h3 {
+        font-size: 16px;
+    }
+}
+
+
