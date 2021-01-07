@@ -104,7 +104,7 @@ function playGame() {
     sequenceToGuess = [...sequence]; // Reset the sequenceToGuess regardless
     setTimeout(() => {
         startFlashing();
-    }, 6200);
+    }, 4200);
 }
 
 function countDown()
