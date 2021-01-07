@@ -108,7 +108,7 @@ body {
     z-index: 9;
     padding: 10px;
     text-align: center;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.3);
     font-size: 30px;
 }
 
@@ -129,11 +129,11 @@ body {
         position:absolute;
         top:50%;
         left:50%;
-        width:400px;  /* adjust as per your needs */
-        height:400px;   /* adjust as per your needs */
-        margin-left:-200px;   /* negative half of width above */
-        margin-top:-350px;   /* negative half of height above */
-        background: rgba(168, 150, 150, 0.5);
+        width:400px; 
+        height:400px;  
+        margin-left:-200px;
+        margin-top:-350px;
+        background: rgba(168, 150, 150, 0.3);
         font-size: 24px;
     }
   }
@@ -157,18 +157,17 @@ body {
     justify-content: center;
     align-items: center;
     position:absolute;
-    top:50%;
+    top:60%;
     left:50%;
     width:400px;
     height:400px;
     margin-left:-200px;
     margin-top:-350px;
-    background: rgba(168, 150, 150, 0.5);
 }
 
 #countdown .countdown-text{
-    font-size: 50px;
+    font-size: 350px;
     color: magenta;
-    top:50%;
+
     text-align: center;
 }

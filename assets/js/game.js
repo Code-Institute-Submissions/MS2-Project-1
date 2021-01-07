@@ -96,6 +96,7 @@ function playGame() {
     if (sequence === undefined || sequenceToGuess === undefined) {
         resetSequence();
         resetScore();
+        removePopUp();
         count = 4;
         setInterval(countDown, 1000);
         countDown();
@@ -121,4 +122,10 @@ function countDown()
   } 
     
   countdownElement.children[0].innerHTML=count;
+}
+
+
+function removePopUp() {
+    const popUpElem = document.getElementById("pop-up");
+    popUpElem.style.display = "none";
 }
