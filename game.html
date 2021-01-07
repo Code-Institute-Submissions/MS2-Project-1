@@ -11,7 +11,7 @@
     <body>
       <div class="container-game">
         <div class="row">
-          <div id="score" class="brk-btn col-6 mx-auto d-block"><strong>Score: <span>0</span></strong></div>
+          <div id="score" class="brk-btn col-6 mx-auto d-block">Score: <span>0</span></div>
         </div>
         <div class="game-container">
           <div class="col-sm-12">
@@ -27,14 +27,13 @@
       <div class="btnContainer col-xl-12">
         <div class="row">
           <div class="gameBtn">
-            <a type="button" value="New Game" id="playGame" onClick='resetGame()' class="brk-btn m-4">Start</a>
-          <!--  <a type="button" value="reset" id="resetGame" onClick='resetGame()' class="brk-btn m-4">Reset</a> -->
+            <a type="button" value="New Game" id="playGame" onClick='playGame()' class="brk-btn m-4">Start</a>
             <a type="button" value="back" id="backBtn" class="brk-btn m-4" href="index.html">Back</a>
+            <div class="brk-btn col" id="pop-up">
+              <span></span>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="brk-btn" id="pop-up">
-        <span></span>
       </div>
       <script src="assets/js/script.js"></script>
       <script src="assets/js/game.js"></script>

@@ -98,6 +98,9 @@ function playGame() {
     // When we start the game, sequence will be undefined
     if (sequence === undefined || sequenceToGuess === undefined) {
         resetSequence();
+        resetScore();
+        document.getElementById('pop-up').style.display = 'none';
+        // Clear any variables and the sequence, score etc.
     }
     sequenceToGuess = [...sequence]; // Reset the sequenceToGuess regardless
     displayUserMessage('Game will start in 1 seconds');
@@ -106,9 +109,7 @@ function playGame() {
     }, 1000);
 }
 
-function resetGame() {
-    // Clear any variables and the sequence, score etc.
-    resetScore();
-    resetSequence();
-    playGame();
+
+function hide() {
+    document.getElementById('pop-up').style.display = 'none';
 }
