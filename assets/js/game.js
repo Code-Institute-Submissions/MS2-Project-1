@@ -4,7 +4,7 @@ const bottomLeft = document.querySelector('.box3');
 const bottomRight = document.querySelector('.box4');
 const level = document.getElementById('#level');
 const flashTime = 250;
-const flashTimer = 1000;
+const flashDelay = 1000;
 let score = 0;
 let canClick = false;
 // Populated on reset
@@ -40,7 +40,7 @@ const flash = (box) => {
             setTimeout(() => {
                 resolve();
             }, flashTime);
-        }, flashTimer);
+        }, flashDelay);
     });
 };
 
@@ -55,6 +55,8 @@ const boxClicked = boxClicked => {
             sequenceToGuess = [...sequence];
             startFlashing();
             score += 1;
+            setScore(score);
+            
         }
     } else {
         // end game
@@ -62,9 +64,21 @@ const boxClicked = boxClicked => {
     }
 };
 
-function handleGameOver() {
-    displayUserMessage(`Game Over with Score ${score}. Press Start to continue from where you left off or Reset to start over.`);
+function resetScore() {
     score = 0;
+    document.getElementById("score").children[0].innerHTML = score;
+}
+
+function setScore(score) {
+    document.getElementById("score").children[0].innerHTML = score;
+}
+
+function handleGameOver() {
+    const popUp = document.getElementById("pop-up");
+    popUp.children[0].innerHTML = `<h2>Game Over</h2> <br> Your score: ${score} <br> Press Start to continue to try again`;
+    popUp.style.display = "block";
+    document.getElementsByClassName("container-game")[0].style.filter ="blur(6px)";
+    resetScore();
     canClick = false;
 }
 
@@ -94,6 +108,7 @@ function playGame() {
 
 function resetGame() {
     // Clear any variables and the sequence, score etc.
+    resetScore();
     resetSequence();
     playGame();
 }

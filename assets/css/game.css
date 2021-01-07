@@ -13,6 +13,8 @@ body {
 
 #score {
     margin-top: 20px;
+    color: black;
+    font-size: 30px;
 }
 
 .game-container {
@@ -20,8 +22,8 @@ body {
 }
 
 .box {
-    width: 250px;
-    height: 250px;
+    width: 225px;
+    height: 225px;
     display: inline-block;
     cursor: pointer;
 }
@@ -91,3 +93,27 @@ body {
     cursor: pointer;
 }
 
+#pop-up {
+    display: none;
+    position: absolute;
+    bottom: 25%;
+    right: 27%;
+    width: 30em;
+    height: 20em;
+    z-index: 9;
+    padding: 10px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.5);
+    font-size: 30px;
+}
+
+#pop-up span {
+    top: 25%;
+    position: relative;
+    line-height: 2em;
+    font-size: 36px;
+}
+
+#pop-up span h2 {
+    font-size: 50px;
+}
