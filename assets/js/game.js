@@ -10,6 +10,7 @@ let canClick = false;
 // Populated on reset
 let sequence;
 let sequenceToGuess;
+let count = 4;
 
 /*
 Returns a random box for the user to click
@@ -90,26 +91,34 @@ const startFlashing = async () => {
     canClick = true;
 };
 
-function displayUserMessage(message) {
-    alert(message);
-}
-
 function playGame() {
     // When we start the game, sequence will be undefined
     if (sequence === undefined || sequenceToGuess === undefined) {
         resetSequence();
         resetScore();
-        document.getElementById('pop-up').style.display = 'none';
+        count = 4;
+        setInterval(countDown, 1000);
+        countDown();
         // Clear any variables and the sequence, score etc.
     }
     sequenceToGuess = [...sequence]; // Reset the sequenceToGuess regardless
-    displayUserMessage('Game will start in 1 seconds');
     setTimeout(() => {
         startFlashing();
-    }, 1000);
+    }, 6200);
 }
 
-
-function hide() {
-    document.getElementById('pop-up').style.display = 'none';
+function countDown()
+{
+  const countdownElement = document.getElementById("countdown");
+  countdownElement.style.display = "flex";
+  count = count - 1;
+  if (count < 0)
+  {
+    clearInterval(setInterval(countDown, 1000));
+    countdownElement.style.display = "none";
+    
+    return;
+  } 
+    
+  countdownElement.children[0].innerHTML=count;
 }
