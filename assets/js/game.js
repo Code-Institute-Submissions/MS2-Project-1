@@ -11,6 +11,7 @@ let canClick = false;
 let sequence;
 let sequenceToGuess;
 let count = 4;
+var interval;
 
 /*
 Returns a random box for the user to click
@@ -46,12 +47,14 @@ const flash = (box) => {
 };
 
 const boxClicked = boxClicked => {
+    // If game is not in game mode, don't do anything
     if (!canClick) return;
 
     const expectedBox = sequenceToGuess.shift();
     if (expectedBox === boxClicked) {
+        // If the correct boxes are clicked
         if (sequenceToGuess.length === 0) {
-            // start new round
+            // Start new round and add score point
             sequence.push(getRandomBox());
             sequenceToGuess = [...sequence];
             startFlashing();
@@ -60,49 +63,54 @@ const boxClicked = boxClicked => {
             
         }
     } else {
-        // end game
+        // If the wrong box is clicked = end game
         handleGameOver();
     }
 };
 
 function resetScore() {
+    // Reset the score variable and insert it in the HTML
     score = 0;
     document.getElementById("score").children[0].innerHTML = score;
 }
 
 function setScore(score) {
+    // Insert the score variable in the HTML
     document.getElementById("score").children[0].innerHTML = score;
 }
 
 function handleGameOver() {
-    const popUp = document.getElementById("pop-up");
-    popUp.children[0].innerHTML = `<h2>Game Over</h2> <br> Your score: ${score} <br> Press Start to continue to try again`;
-    popUp.style.display = "block";
-    document.getElementsByClassName("container-game")[0].style.filter ="blur(6px)";
+    // Fetch the game-over and game container elements
+    const gameOverElem = document.getElementById("game-over");
+    const containerGame = document.getElementsByClassName("container-game")[0];
+    // Display the game over pop-up and insert text
+    gameOverElem.children[0].innerHTML = `<h2>Game Over</h2> <br> Your score: ${score} <br> Press Start to continue to try again`;
+    gameOverElem.style.display = "block";
+    // Add blur to background
+    containerGame.style.filter ="blur(6px)";
     resetScore();
     canClick = false;
 }
 
 const startFlashing = async () => {
+    // Show flash for boxes
     canClick = false;
     for (const box of sequence) {
         await flash(box);
     }
+    // Flashes is done, you can now click
     canClick = true;
 };
 
 function playGame() {
-    // When we start the game, sequence will be undefined
-    if (sequence === undefined || sequenceToGuess === undefined) {
-        resetSequence();
-        resetScore();
-        removePopUp();
-        count = 4;
-        setInterval(countDown, 1000);
-        countDown();
-        // Clear any variables and the sequence, score etc.
-    }
-    sequenceToGuess = [...sequence]; // Reset the sequenceToGuess regardless
+    // Reset any variables and the sequence, score etc.
+    resetScore();
+    hideGameOverPopUp();
+    resetSequence();
+    count = 4;
+    // Start countdown interval every 1 second
+    interval = setInterval(countDown, 1000);
+
     setTimeout(() => {
         startFlashing();
     }, 4200);
@@ -110,22 +118,33 @@ function playGame() {
 
 function countDown()
 {
+  // Fetch popup element called countdown and display it
   const countdownElement = document.getElementById("countdown");
   countdownElement.style.display = "flex";
+  // count variable is one less everytime this loops
   count = count - 1;
-  if (count < 0)
+  if (count <= 0)
   {
-    clearInterval(setInterval(countDown, 1000));
+    // if count is down to 0, hide popup element and clear interval
     countdownElement.style.display = "none";
+    clearInterval(interval);
     
     return;
   } 
-    
-  countdownElement.children[0].innerHTML=count;
+  // display count in the HTML
+  countdownElement.children[0].innerHTML = count;
 }
 
 
-function removePopUp() {
-    const popUpElem = document.getElementById("pop-up");
-    popUpElem.style.display = "none";
+function hideGameOverPopUp() {
+    // Fetch the game-over and game container elements
+    const gameOverElem = document.getElementById("game-over");
+    const containerGame = document.getElementsByClassName("container-game")[0];
+    // Remove blur from game container
+    containerGame.style.filter ="blur(0px)";
+    if (gameOverElem.style.display === "block") {
+        // Set display to none if the game-over element is visible
+        gameOverElem.style.display = 'none';
+        canClick = true;
+    }
 }

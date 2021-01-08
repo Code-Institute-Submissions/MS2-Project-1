@@ -98,7 +98,7 @@ body {
     cursor: pointer;
 }
 
-#pop-up {
+#game-over {
     display: none;
     position: absolute;
     bottom: 25%;
@@ -112,19 +112,19 @@ body {
     font-size: 30px;
 }
 
-#pop-up span {
+#game-over span {
     top: 25%;
     position: relative;
     line-height: 2em;
     font-size: 36px;
 }
 
-#pop-up span h2 {
+#game-over span h2 {
     font-size: 50px;
 }
 
 @media screen and (max-width: 1200px) {
-    #pop-up {
+    #game-over{
         display: none;
         position:absolute;
         top:50%;
@@ -139,14 +139,14 @@ body {
   }
 
   @media screen and (max-width: 1200px) {
-    #pop-up span {
+    #game-over span {
         font-size: 20px;
         margin-bottom: 150px;
     }
 }
 
 @media screen and (max-width: 1200px) {
-    #pop-up span h3 {
+    #game-over span h3 {
         font-size: 16px;
     }
 }
