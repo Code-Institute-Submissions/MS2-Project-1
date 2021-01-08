@@ -107,16 +107,16 @@ body {
 
 #game-over {
     display: none;
-    position: absolute;
-    bottom: 25%;
-    right: 27%;
-    width: 30em;
-    height: 20em;
+    position: fixed;
+    bottom: 28%;
+    right: 29%;
+    width: 800px;
+    height: 600px;
     z-index: 9;
     padding: 10px;
-    text-align: center;
     background: rgba(255, 255, 255, 0.3);
     font-size: 30px;
+    
 }
 
 #game-over span {
