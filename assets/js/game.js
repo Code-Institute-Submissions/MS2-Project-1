@@ -20,7 +20,7 @@ const getRandomBox = () => {
     const boxes = [topLeft, topRight, bottomLeft, bottomRight]
     return boxes[parseInt(Math.random() * boxes.length)];
 };
-
+// This resets the sequence
 function resetSequence() {
     sequence = [getRandomBox()];
     sequenceToGuess = [...sequence];
@@ -38,7 +38,7 @@ const flash = (box) => {
                 'active',
                 ''
             );
-
+            // This is where the box is flashed
             setTimeout(() => {
                 resolve();
             }, flashTime);
@@ -84,7 +84,7 @@ function handleGameOver() {
     const gameOverElem = document.getElementById("game-over");
     const containerGame = document.getElementsByClassName("container-game")[0];
     // Display the game over pop-up and insert text
-    gameOverElem.children[0].innerHTML = `<h2>Game Over</h2> <br> Your score: ${score} <br> Press Start to continue to try again`;
+    gameOverElem.children[0].innerHTML = `<h2>Game Over</h2> <br> Your score: ${score} <br> Press Start to try again`;
     gameOverElem.style.display = "block";
     // Add blur to background
     containerGame.style.filter ="blur(6px)";
