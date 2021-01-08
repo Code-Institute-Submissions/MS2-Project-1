@@ -130,6 +130,21 @@ body {
     font-size: 50px;
 }
 
+@media screen and (max-height: 1440px) {
+    #game-over{
+        display: none;
+        position: fixed;
+        bottom: 49%;
+        right: 35%;
+        width: 800px;
+        height: 600px;
+        z-index: 9;
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.3);
+        font-size: 30px;
+    }
+  }
+
 @media screen and (max-width: 1200px) {
     #game-over{
         display: none;
