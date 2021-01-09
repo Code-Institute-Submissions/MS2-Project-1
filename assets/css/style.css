@@ -12,6 +12,7 @@
 
 #instructions h3 {
     text-decoration: underline;
+    margin: 0;
 }
 
 #instructions h5 {

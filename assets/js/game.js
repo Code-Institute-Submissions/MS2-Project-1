@@ -3,6 +3,7 @@ const topRight = document.querySelector('.box2');
 const bottomLeft = document.querySelector('.box3');
 const bottomRight = document.querySelector('.box4');
 const level = document.getElementById('#level');
+const containerElem = document.getElementsByClassName("container-game")[0];
 const flashTime = 250;
 const flashDelay = 1000;
 let score = 0;
@@ -46,6 +47,8 @@ const flash = (box) => {
     });
 };
 
+
+
 const boxClicked = boxClicked => {
     // If game is not in game mode, don't do anything
     if (!canClick) return;
@@ -57,9 +60,11 @@ const boxClicked = boxClicked => {
             // Start new round and add score point
             sequence.push(getRandomBox());
             sequenceToGuess = [...sequence];
-            startFlashing();
             score += 1;
             setScore(score);
+            setTimeout(() => {
+                startFlashing();
+            }, flashDelay);
             
         }
     } else {
@@ -93,12 +98,15 @@ function handleGameOver() {
 }
 
 const startFlashing = async () => {
+    // Add flashing class to game container
+    containerElem.classList.add("flashing");
     // Show flash for boxes
     canClick = false;
     for (const box of sequence) {
         await flash(box);
     }
-    // Flashes is done, you can now click
+    // Flashes is done, user can now click and remove flashing class
+    containerElem.classList.remove("flashing");
     canClick = true;
 };
 

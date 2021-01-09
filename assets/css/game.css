@@ -18,6 +18,10 @@ body {
     font-weight: bold;
 }
 
+.flashing {
+    pointer-events: none;
+}
+
 
 /*----------- Boxes ---------------*/
 
@@ -41,18 +45,13 @@ body {
     }
 }
 
-
-.box:active {     
-    box-shadow: 0px 0px 20px 20px rgb(0, 255, 221);    
-}
-
 .box1 {
     background-color: rgba(255, 0, 0, 0.2);
     box-shadow: 0px 0px 10px 10px rgba(255, 0, 0, 0.7);
     margin: 20px;
 }
 
-.box1:hover {
+.box1.active, .box1.active:hover {
     background-color: rgba(255, 0, 0, 0.7);
     box-sizing: border-box;
 }
@@ -63,7 +62,7 @@ body {
     margin: 20px;
 }
 
-.box2:hover {
+.box2.active, .box2.active:hover {
     background-color: rgba(0, 26, 255, 0.7);
     box-sizing: border-box;
 }
@@ -74,7 +73,7 @@ body {
     margin: 20px;
 }
 
-.box3:hover {
+.box3.active, .box3.active:hover {
     background-color: rgba(251, 255, 0, 0.7);
     box-sizing: border-box;
 }
@@ -85,15 +84,21 @@ body {
     margin: 20px;
 }
 
-.box4:hover {
+.box4.active, .box4.active:hover {
     background-color: rgba(9, 255, 0, 0.7);
     box-sizing: border-box;
 }
 
-.active {
+.box:hover {
     background-color: rgba(255, 255, 255, 0.1);
     box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.7);
 }
+
+.box:active {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 30px 30px rgba(255, 255, 255, 0.7);
+}
+
 
 
 /*----------- Buttons ---------------*/
@@ -138,14 +143,12 @@ body {
     font-size: 50px;
 }
 
-
-
 @media screen and (max-width: 600px) {
     .wrapper {
         overflow: hidden;
         height: 100vh;
     }
-    
+
     .btnContainer {
         margin-top: 5em;
     }
