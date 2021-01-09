@@ -9,31 +9,35 @@
         <title>Simon Game</title>
     </head>
     <body>
-      <div class="container-game">
-        <div class="row">
-          <div id="score" class="brk-btn col-6 mx-auto d-block">Score: <span>0</span></div>
-        </div>
-        <div class="game-container">
-          <div class="col-sm-12">
-            <div onclick="boxClicked(event.currentTarget)" class="box box1"></div>
-            <div onclick="boxClicked(event.currentTarget)" class="box box2"></div>
+      <div class="wrapper">
+        <div class="container-game">
+          <div class="row">
+            <div id="score" class="brk-btn col-6 mx-auto d-block">Score: <span>0</span></div>
           </div>
-          <div class="col-sm-12">
-            <div onclick="boxClicked(event.currentTarget)" class="box box3"></div>
-            <div onclick="boxClicked(event.currentTarget)" class="box box4"></div>
-          </div>
-        </div>
-      </div>
-      <div class="btnContainer col-xl-12">
-        <div class="row">
-          <div class="gameBtn">
-            <button type="button"  id="playGame" onClick='playGame()' class="brk-btn m-4">Start</button>
-            <a href="./index.html" id="backBtn" class="brk-btn m-4">Back</a>
-            <div class="brk-btn col" id="game-over">
-              <span></span>
+          <div class="game-container">
+            <div class="col-sm-12">
+              <div onclick="boxClicked(event.currentTarget)" class="box box1"></div>
+              <div onclick="boxClicked(event.currentTarget)" class="box box2"></div>
             </div>
-            <div id="countdown">
-              <span class="countdown-text"></span>
+            <div class="col-sm-12">
+              <div onclick="boxClicked(event.currentTarget)" class="box box3"></div>
+              <div onclick="boxClicked(event.currentTarget)" class="box box4"></div>
+            </div>
+          </div>
+        </div>
+        <div class="container-popup">
+          <div class="brk-btn col" id="game-over">
+            <span></span>
+          </div>
+          <div id="countdown">
+            <span class="countdown-text"></span>
+          </div>
+       </div>
+        <div class="btnContainer col-xl-12">
+          <div class="row">
+            <div class="gameBtn">
+              <a id="playGame" onClick='playGame()' class="brk-btn">Start</a>
+              <a href="./index.html" id="backBtn" class="brk-btn">Back</a>
             </div>
           </div>
         </div>

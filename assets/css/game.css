@@ -97,26 +97,34 @@ body {
 
 
 /*----------- Buttons ---------------*/
-
-
-#backBtn {
-    text-decoration: none;
+.gameBtn a:hover {
     color: magenta;
+    background-color:rgba(255, 255, 255, 0.1)
 }
 
+.btnContainer {
+    margin-top: 3em;
+}
+
+.container-popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 #game-over {
     display: none;
+    justify-content: center;
     position: fixed;
-    bottom: 28%;
-    right: 29%;
-    width: 800px;
-    height: 600px;
+    margin: 0 auto;
+    top: 10%;
     z-index: 9;
     padding: 10px;
+    height: 60%;
+    width: 70%;
     background: rgba(255, 255, 255, 0.3);
     font-size: 30px;
-    
+    color: black;
 }
 
 #game-over span {
@@ -130,46 +138,36 @@ body {
     font-size: 50px;
 }
 
-@media screen and (max-height: 1440px) {
-    #game-over{
-        display: none;
+
+
+@media screen and (max-width: 600px) {
+    .wrapper {
+        overflow: hidden;
+        height: 100vh;
+    }
+    
+    .btnContainer {
+        margin-top: 5em;
+    }
+
+    #game-over {
         position: fixed;
-        bottom: 49%;
-        right: 35%;
-        width: 800px;
-        height: 600px;
-        z-index: 9;
-        padding: 10px;
-        background: rgba(255, 255, 255, 0.3);
-        font-size: 30px;
-    }
-  }
+        height: 60%;
+        width: 90%;
+    }    
 
-@media screen and (max-width: 1200px) {
-    #game-over{
-        display: none;
-        position:absolute;
-        top:50%;
-        left:50%;
-        width:400px; 
-        height:400px;  
-        margin-left:-200px;
-        margin-top:-350px;
-        background: rgba(168, 150, 150, 0.3);
-        font-size: 24px;
-    }
-  }
-
-  @media screen and (max-width: 1200px) {
+    
     #game-over span {
-        font-size: 20px;
-        margin-bottom: 150px;
+        top: 25%;
+        position: relative;
+        line-height: 2;
+        font-size: 1.4rem;
     }
-}
-
-@media screen and (max-width: 1200px) {
     #game-over span h3 {
         font-size: 16px;
+    }
+    .brk-btn {
+        margin: 0;
     }
 }
 
@@ -180,18 +178,15 @@ body {
 #countdown {
     display: none;
     justify-content: center;
-    align-items: center;
-    position:absolute;
-    top:60%;
-    left:50%;
-    width:400px;
-    height:400px;
-    margin-left:-200px;
-    margin-top:-350px;
+    margin: 0 auto;
+    top: 15%;
+    position: fixed;
+    width: 400px;
+    height: 400px;
 }
 
 #countdown .countdown-text{
     font-size: 350px;
-    color: magenta;
+    color: black;
     text-align: center;
 }

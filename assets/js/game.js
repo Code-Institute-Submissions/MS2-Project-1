@@ -85,7 +85,7 @@ function handleGameOver() {
     const containerGame = document.getElementsByClassName("container-game")[0];
     // Display the game over pop-up and insert text
     gameOverElem.children[0].innerHTML = `<h2>Game Over</h2> <br> Your score: ${score} <br> Press Start to try again <br> Press Back for homepage`;
-    gameOverElem.style.display = "block";
+    gameOverElem.style.display = "flex";
     // Add blur to background
     containerGame.style.filter ="blur(6px)";
     resetScore();
@@ -142,7 +142,7 @@ function hideGameOverPopUp() {
     const containerGame = document.getElementsByClassName("container-game")[0];
     // Remove blur from game container
     containerGame.style.filter ="blur(0px)";
-    if (gameOverElem.style.display === "block") {
+    if (gameOverElem.style.display === "flex") {
         // Set display to none if the game-over element is visible
         gameOverElem.style.display = 'none';
         canClick = true;

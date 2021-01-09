@@ -43,7 +43,10 @@
     border: 0.2em solid magenta;
     padding: 1em 2em;
     font-size: 25px;
+    margin: 0 1em;
+    cursor: pointer;
 }
+
 .brk-btn::before {
     content: "";
     display: block;
