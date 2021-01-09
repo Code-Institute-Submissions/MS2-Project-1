@@ -9,12 +9,12 @@
         <title>Simon Game</title>
     </head>
     <body>
-      <div class="wrapper">
-        <div class="container-game">
+      <div id="game-wrapper">
+        <div class="game-container">
           <div class="row">
-            <div id="score" class="brk-btn col-6 mx-auto d-block">Score: <span>0</span></div>
+            <div class="score-container game-btn col-6 mx-auto d-block">Score: <span class="score-text">0</span></div>
           </div>
-          <div class="game-container">
+          <div class="box-container">
             <div class="col-sm-12">
               <div onclick="boxClicked(event.currentTarget)" class="box box1"></div>
               <div onclick="boxClicked(event.currentTarget)" class="box box2"></div>
@@ -25,24 +25,23 @@
             </div>
           </div>
         </div>
-        <div class="container-popup">
-          <div class="brk-btn col" id="game-over">
-            <span></span>
+        <div class="popup-container">
+          <div class="game-over-container game-btn col">
+            <span class="game-over-text"></span>
           </div>
-          <div id="countdown">
+          <div class="countdown-container">
             <span class="countdown-text"></span>
           </div>
        </div>
         <div class="btnContainer col-xl-12">
           <div class="row">
             <div class="gameBtn">
-              <a id="playGame" onClick='playGame()' class="brk-btn">Start</a>
-              <a href="./index.html" id="backBtn" class="brk-btn">Back</a>
+              <a class="game-btn" id="playGame" onClick='playGame()'>Start</a>
+              <a class="game-btn" id="backBtn" href="./index.html">Back</a>
             </div>
           </div>
         </div>
       </div>
-      <script src="assets/js/script.js"></script>
       <script src="assets/js/game.js"></script>
     </body>
 </html>
