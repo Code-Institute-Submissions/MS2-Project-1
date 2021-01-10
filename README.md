@@ -5,9 +5,6 @@
 [View the live project here](https://linusloof.github.io/MS2-Project/)
 
 
-
-
-
 ---
 
 # Table of contents
@@ -28,8 +25,9 @@
 ## Inspiration
 
 
-
-
+As inspiration I have used the classic game "simon says". I wanted to build a game that is entertaining and very stylish at the same time.
+I initialy started with another plan which consisted of a webpage of hamburger information since I am a big fan of hamburgers. I started making it but soon realised that I 
+wasn't completelty sold on the idea and it didn't turn out like I imagined. Funny story, but that night I had a dream that I started a new project, that was a game instead and it was a simon says game. After that I started a new project that was sprung from the simon says dream. The tone of the game is a cyper/futuristic theme. It made the game a little different from an ordinary simons says game.
 
 ---
 
@@ -39,35 +37,37 @@
 
 ##  First Time Visitor Goals
 
-* 
-* 
-* 
+
+##  First Time Visitor Goals
+
+* As a first time visitor, I want to understand that it's a simons says type of game but with a fun and unique theme.
+* As a first time visitor, I want to be able to easily navigate throughout the site to find content.
+* As a first time visitor, I want to understand the rules of the game even if I haven't played a similar game before.
 
 ## Returning Visitor Goals
 
-* 
-* 
-* 
+* As a returning visitor, I want it to be entertaining enough to make me wanna go back to play more.
+* As a returning visitor, I want to find the best way to get in contact with the creator with any questions I may have.
 
 ##  Frequent User Goals
 
-* 
-* 
+* As a Frequent User, I want to try to beat my old highest score.
+* As a Frequent User, I want to get more of a challenge the more I play.
 
 # Features
 
 ## Existing Features
 
-* 
-* 
+* Responsive on all device sizes
+* Interactive elements
 * 
 * 
 * 
 
 ## Feature ideas to Implement
 
-* 
-* 
+* Sound effects
+* Other levels, so for example the sequence goes faster.
 * 
 * 
 
@@ -83,13 +83,10 @@
 # Design
 
 * ## Colour Scheme
-    * 
+    * The main colors for this game is Magenta and Black.
 
 * ## Typography
-    * 
-
-* ## Imagery
-    * 
+    * The Oswald font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly.
 
 * ## Wireframes 
     * Home Page Wireframe - 
@@ -111,18 +108,32 @@
 
 ##  First Time Visitor Goals
 
-
+* As a first time visitor, I want to understand that it's a simons says type of game but with a fun and unique theme.
+    * The name of the game is "SimonGame", indicating that has a relation to the classic game "simons says".
+    * The first page has instructions that explains the rules of a simons says game. i.e. mimic the pattern.
+    * The theme is quite dramatic and hard too miss with its'cyber/futuristic characteristics. It does not look like an ordinary simon says game. 
+* As a first time visitor, I want to be able to easily navigate throughout the site to find content.
+    * The first page has a play button as well as instructions on how to start playing.
+    * The game page has both a start button and a back button to navigate either to start playing or go back to the first page.
+* As a first time visitor, I want to understand the rules of the game even if they haven't played a similar game before.
+    * The first page has instructions that explains the basics of how to play the game.
 
 ## Returning Visitor Goals
 
-
+* As a returning visitor, I want it to be entertaining enough to make me wanna go back to play more.
+    * Simons says has been a very popular game for a long time. Since this is more or less this type of a game, I find it likely that many users will enjoy it.
+    * I've had friends and family try out my game and everyone enjoyed playing it.
+* As a returning visitorr, I want to find the best way to get in contact with the creator with any questions I may have.
+    * The first page has my name on it along with my email which you can use to get in contact with me.
 
 ##  Frequent User Goals
 
-
+* As a Frequent User, I want to try to beat my old highscore as well as other players highest score.
+    * Although I don't have a backend connection for storing highscores yet, users can view their current score on the top of the game page.
+* As a Frequent User, I want to get more of a challenge the more I play.
+    * The logic of this game is that you mimic a pattern that gets more and more complex. Hence, the better you become the more complex patterns.
 
 ### Here is some examples of bugs that I encounterd during testing:
-
 
 
 *  The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
