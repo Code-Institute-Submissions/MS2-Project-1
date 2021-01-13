@@ -4,7 +4,7 @@
 
 [View the live project here](https://linusloof.github.io/MS2-Project/)
 
-
+![alternativetext](assets/images/simongame.png)
 ---
 
 # Table of contents
@@ -75,7 +75,15 @@ wasn't completelty sold on the idea and it didn't turn out like I imagined. Funn
 
 # Screenshots
 
+In the first two images the game were a little broken
 
+![alternativetext](assets/images/pic1.png)
+
+![alternativetext](assets/images/pic2.png)
+
+in this image i fixed the problem
+
+![alternativetext](assets/images/pic3.png)
 
 
 ---
