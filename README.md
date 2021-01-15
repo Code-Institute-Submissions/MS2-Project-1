@@ -76,9 +76,9 @@ wasn't completelty sold on the idea and it didn't turn out like I imagined. Funn
     * The Oswald font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly.
 
 * ## Wireframes 
-    * Home Page Wireframe - [View](assets/images/homePage.png)
-    * Game Page Wireframe - [View](assets/images/gamePage.png)
-    * Diffrent Devices Wireframe - [View](assets/images/devices.png)
+    * Home Page Wireframe - [View](assets/images/homePage.jpg)
+    * Game Page Wireframe - [View](assets/images/gamePage.jpg)
+    * Diffrent Devices Wireframe - [View](assets/images/devices.jpg)
 
 ---
 
