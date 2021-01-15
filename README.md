@@ -76,9 +76,9 @@ wasn't completelty sold on the idea and it didn't turn out like I imagined. Funn
     * The Oswald font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly.
 
 * ## Wireframes 
-    * Home Page Wireframe - 
-    * Contact Us Page Wireframe - 
-
+    * Home Page Wireframe - [View](assets/images/homePage.png)
+    * Game Page Wireframe - [View](assets/images/gamePage.png)
+    * Diffrent Devices Wireframe - [View](assets/images/devices.png)
 
 ---
 
@@ -159,9 +159,6 @@ wasn't completelty sold on the idea and it didn't turn out like I imagined. Funn
     * GitHub is used to store the projects code after being pushed from Git.
 5. Git:
     * Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
-
-
-
 
 ---
 
