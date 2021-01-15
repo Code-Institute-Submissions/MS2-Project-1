@@ -44,4 +44,50 @@
       </div>
       <script src="assets/js/game.js"></script>
     </body>
+</html><!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="assets/css/game.css" type="text/css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <title>Simon Game</title>
+    </head>
+    <body>
+      <div id="game-wrapper">
+        <div class="game-container">
+          <div class="row">
+            <div class="score-container game-btn col-6 mx-auto d-block">Score: <span class="score-text">0</span></div>
+          </div>
+          <div class="box-container">
+            <div class="col-sm-12">
+              <div onclick="boxClicked(event.currentTarget)" class="box box1"></div>
+              <div onclick="boxClicked(event.currentTarget)" class="box box2"></div>
+            </div>
+            <div class="col-sm-12">
+              <div onclick="boxClicked(event.currentTarget)" class="box box3"></div>
+              <div onclick="boxClicked(event.currentTarget)" class="box box4"></div>
+            </div>
+          </div>
+        </div>
+        <div class="popup-container">
+          <div class="game-over-container game-btn col">
+            <span class="game-over-text"></span>
+          </div>
+          <div class="countdown-container">
+            <span class="countdown-text"></span>
+          </div>
+       </div>
+        <div class="btnContainer col-xl-12">
+          <div class="row">
+            <div class="gameBtn">
+              <a class="game-btn" id="playGame" onClick='playGame()'>Start</a>
+              <a class="game-btn" id="backBtn" href="./index.html">Back</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="assets/js/game.js"></script>
+    </body>
 </html>

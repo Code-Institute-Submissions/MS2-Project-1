@@ -17,6 +17,7 @@
 * [Testing](#testing)
 * [Technologies](#technologies)
 * [Code](#code/sources)
+* [Commits](#commits)
 * [Deployment](#deployment)
 * [Contact](#Contact)
 
@@ -189,6 +190,47 @@ This is were i got the inspiration for my buttons and to highlight my divs.
 https://codepen.io/yourpalnurav/pen/LqNmzL
 
 ---
+
+## Commits
+
+NOTE: Instead of executing a git rebase , I opted for providing this table relating the commit ID with the proper commit message and date.
+
+| Commit ID        | Commit Message    | Date  |
+| -------- |:-------------:| -----:|
+| 56c8090  |  update text for README | Jan 13, 2021 |
+| fd7bad6  | add images into README for texting section     |   Jan 13, 2021 |
+| f496baa  | add README text to Inspiration and UX + fix css syntax + add email at bottom of HTML    |   Jan 10, 2021 |
+| 6fe5f82  | move css into correct headlines + change more class names and variable names   |   Jan 9, 2021 |
+| 8873c20  | add  pointer-events: none when flashing is on + :hover & :active effects to boxes  + setTimeOut to startFlashing    |   Jan 9, 2021 |
+| ed7db29  | add better class names for HTML + gui fixes      |   Jan 9, 2021 |
+| f68523a  | responsive game-over screen for max-height: 1440px     |   Jan 8, 2021 |
+| 2711dcd  | game-over screen gui fixes     |   Jan 8, 2021 |
+| 42cd8d5  | fix syntax after code validator + some minor gui fixes for home page     |   Jan 8, 2021 |
+| 1722d51  | add comments in css and js   |   Jan 8, 2021 |
+| e3ed2aa  | changed name for pop-up to game-over to clarify + add comments to functions    |   Jan 8, 2021 |
+| 13f892c  | added function for remove pop-up and remove some css comments       |   Jan 7, 2021 |
+| e12d9ee  | set less time before flashing starts     |   Jan 7, 2021 |
+| 62c359c  | added countdown behavior and style     |   Jan 7, 2021 |
+| 4f9a3a1  | fixed responsive pop-up fot ipad     |   Jan 7, 2021 |
+| dbc50aa  | fixed responsive pop-up + minor gui fixes      |   Jan 7, 2021 |
+| a3f4749  | fixed pop-up behavior and style + changed flashTimer variable into  flashDelay     |   Jan 7, 2021 |
+| 3991494  | changed tag from button to a + fix backBtn alignment      |   Jan 6, 2021 |
+| 17810f7  | changed variable name "level" to "score" + delete script.js + added comments to functions + minor bug fixes      |   Jan 6, 2021 |
+| 50805bc  | added README.md and headlines      |   Jan 6, 2021 |
+| 6ad04e5  | hmtl style + correct indentation     |   Jan 6, 2021 |
+| cfb8754  | media querys for the game to work on diffrent screens     |   Jan 6, 2021 |
+| 9aaf02d  | margins on buttons      |   Jan 6, 2021 |
+| 52a6056  | changed title     |   Jan 6, 2021 |
+| 044999d  | media query for smaller screens, changed padding and margins, setTimeOut to the game     |   Jan 6, 2021 |
+| 6e98680  | styled and function     |   Jan 5, 2021 |
+| 91d7513  | update game.css with ,active and #resetGame worked with startFlashing in script so the gamestarts onClick, rearanged boxes and buttons, changed name to SimonGame     |   Jan 5, 2021 |
+| 9e294f6  | styled boxes, css added reset button in game.html     |   Jan 5, 2021 |
+| 5098e37  | footer with gameBtn      |   Jan 5, 2021 |
+| ec89c4b  | styled the boxes in css, added instructions to home page, wrote functions for game     |   Jan 5, 2021 |
+| 632cac6  | Changed boxes in game.hmtl and title in index.html      |   Jan 4, 2021 |
+| bbcf968  | Title to homepage, added boxes for the game and started with functions in js     |   Jan 4, 2021 |
+| 2963d3a  | Start of the project      |   Jan 4, 2021 |
+
 
 ## Deployment
 
