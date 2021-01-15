@@ -228,6 +228,7 @@ NOTE: Instead of executing a git rebase , I opted for providing this table relat
 | bbcf968  | Title to homepage, added boxes for the game and started with functions in js     |   Jan 4, 2021 |
 | 2963d3a  | Start of the project      |   Jan 4, 2021 |
 
+---
 
 ## Deployment
 
