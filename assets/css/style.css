@@ -1,10 +1,11 @@
 
 .playBtn {
-    padding-top: 500px;
+    padding-top: 22em;
     align-items: center;
     width: 500px;
     height: 50px;
     text-align: center;
+    font-size: 1.1em;
 }
 
 #page-wrapper .instructions-container {
@@ -52,7 +53,7 @@
     text-decoration: none;
     border: 0.2em solid magenta;
     padding: 1em 2em;
-    font-size: 25px;
+    font-size: 1.2em;
     margin: 0 1em;
     cursor: pointer;
 }
@@ -101,7 +102,6 @@ body {
     font-style: italic;
     margin: 0;
     display: inline;
-    overflow: hidden;
 }
 
 .title-container, .start-container {
@@ -109,7 +109,6 @@ body {
     transform: translate(-50%, -50%);
     top: 25%;
     left: 50%;
-
 }
 
 .glitch, .glow {

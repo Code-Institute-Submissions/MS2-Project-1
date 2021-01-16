@@ -6,7 +6,6 @@ html {
 
 body {
     text-align: center;
-    background-image: linear-gradient(rgb(134, 77, 160), rgb(28, 19, 34));
     height: 100%;
     width: 100%;
 }
@@ -16,21 +15,28 @@ body {
 }
 
 #game-wrapper {
-    overflow: hidden;
-    height: 100vh;
+    overflow-x: hidden;
+    min-height: 100vh;
+    background-image: linear-gradient(rgb(134, 77, 160), rgb(28, 19, 34));
+    font-size: 22px;
 }
 
 #game-wrapper .score-container {
     margin-top: 20px;
     color: black;
-    font-size: 30px;
+    font-size: 1em;
     font-weight: bold;
+}
+
+.game-container, .btnContainer {
+    position: relative;
+    top: 2em;
 }
 
 /*----------- Boxes ---------------*/
 
 .box-container {
-    margin-top: 80px;
+    margin-top: 2em;
 }
 
 .box {
@@ -103,7 +109,7 @@ body {
 }
 
 .btnContainer {
-    margin-top: 3em;
+    margin: 6em 0;
 }
 
 /*----------- Game Over Popup ---------------*/
@@ -125,15 +131,14 @@ body {
     height: 60%;
     width: 70%;
     background: rgba(255, 255, 255, 0.3);
-    font-size: 30px;
+    font-size: 0.8em;
     color: black;
 }
 
 .game-over-container span {
-    top: 25%;
-    position: relative;
+    margin-top: 2em;
     line-height: 2em;
-    font-size: 36px;
+    font-size: 2em;
 }
 
 .game-over-container span h2 {
@@ -158,92 +163,82 @@ body {
     text-align: center;
 }
 
+.box {
+    width: 7em;
+    height: 7em;
+}
+
 /*----------- Media Query ---------------*/
 
+/* Smartphones */
 @media screen and (max-width: 600px) {
 
-    #game-container {
-        height: 75%;
-        display: flex;
-        flex-direction: column;
-        position: relative;
+    #game-wrapper {
+        font-size: 22px;
     }
 
-    .btnContainer {
-        margin-top: 5em;
+    .start-container {
+        font-size: 1.4em;
+    }
+
+    .game-container, .btnContainer {
+        top: 5em;
+        position: relative;
     }
 
     .game-over-container {
-        position: fixed;
-        height: 60%;
         width: 90%;
-    }    
+        font-size: 1.5em;
+    }
+
+    .btnContainer {
+        margin: 4em 0em;
+    }
     
     .game-over-container span {
-        top: 25%;
-        position: relative;
-        line-height: 2;
-        font-size: 1.4rem;
+        line-height: 1.3em;
+        font-size: 1em;
+        top: 0;
+        margin-top: 1em;
     }
 
     .game-over-container span h3 {
-        font-size: 16px;
+        font-size: 2.1em;
     }
 
-    .game-btn {
-        margin: 0;
+    .playBtn {
+        font-size: 1.4em;
     }
 
-    .box {
-        width: 120px;
-        height: 120px;
+}
+
+/* Tablets */
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+    #game-wrapper {
+        font-size: 22px;
+    }
+    .game-container, .btnContainer {
+        position: relative;
+    }
+    .game-over-container {
+        height: 45%;
     }
 }
 
-@media screen and (max-width: 1024px) {
-    .game-container {
-        top: 10%;
-        height: 75%;
-        display: flex;
-        flex-direction: column;
-        position: relative;
+/* Small Smartphones */
+@media screen and (min-width: 200px) and (max-width: 500px) {
+    #game-wrapper {
+        font-size: 12px;
+    }
+    .box-container {
+        top: 4em;
     }
 
     .game-btn {
-        position: relative;
-        background: none;
-        color: magenta;
-        text-transform: uppercase;
-        text-decoration: none;
-        border: 0.2em solid magenta;
-        padding: 1em 2em;
-        font-size: 20px;
+        padding: 1em 1em;
+        font-size: 1em;
         margin: 0 1em;
-        cursor: pointer;
+
     }
 
-    .box {
-        width: 120px;
-        height: 120px;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .box {
-        width: 80px;
-        height: 80px;
-    }
-
-    .game-btn {
-        position: relative;
-        background: none;
-        color: magenta;
-        text-transform: uppercase;
-        text-decoration: none;
-        border: 0.2em solid magenta;
-        padding: 0.5em 1em;
-        font-size: 20px;
-        margin: 0 1em;
-        cursor: pointer;
-    }
 }
