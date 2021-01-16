@@ -228,7 +228,7 @@ body {
 /* Small Smartphones */
 @media screen and (min-width: 200px) and (max-width: 500px) {
     #game-wrapper {
-        font-size: 8px;
+        font-size:12px;
     }
     .box-container {
         top: 2em;
