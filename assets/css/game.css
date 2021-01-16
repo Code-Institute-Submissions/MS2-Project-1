@@ -164,14 +164,14 @@ body {
 }
 
 .box {
-    width: 7em;
-    height: 7em;
+    width: 10em;
+    height: 10em;
 }
 
 /*----------- Media Query ---------------*/
 
 /* Smartphones */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 533px) {
 
     #game-wrapper {
         font-size: 22px;
@@ -182,7 +182,7 @@ body {
     }
 
     .game-container, .btnContainer {
-
+        top: 3em;
         position: relative;
     }
 
@@ -210,6 +210,11 @@ body {
         font-size: 1.4em;
     }
 
+    .box {
+        width: 10em;
+        height: 10em;
+    }
+
 }
 
 /* Tablets */
@@ -226,12 +231,9 @@ body {
 }
 
 /* Small Smartphones */
-@media screen and (min-width: 200px) and (max-width: 500px) {
+@media screen and (min-width: 200px) and (max-width: 532px) {
     #game-wrapper {
         font-size:12px;
-    }
-    .box-container {
-        top: 2em;
     }
 
     .game-btn {
