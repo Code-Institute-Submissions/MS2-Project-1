@@ -22,7 +22,7 @@ body {
 }
 
 #game-wrapper .score-container {
-    margin-top: 20px;
+    margin-top: 0px;
     color: black;
     font-size: 1em;
     font-weight: bold;
