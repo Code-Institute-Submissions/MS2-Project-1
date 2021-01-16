@@ -128,8 +128,8 @@ body {
     top: 10%;
     z-index: 9;
     padding: 10px;
-    height: 45%;
-    width: 70%;
+    height: 50%;
+    width: 40%;
     background: rgba(255, 255, 255, 0.3);
     font-size: 0.8em;
     color: black;
@@ -170,59 +170,53 @@ body {
 
 /*----------- Media Query ---------------*/
 
-/* Smartphones */
-@media screen and (max-width: 533px) {
-
-    #game-wrapper {
-        font-size: 22px;
-    }
-
-    .start-container {
-        font-size: 1.4em;
-    }
-
-    .game-container, .btnContainer {
-        top: 3em;
-        position: relative;
-    }
-
-    .game-over-container {
-        width: 90%;
-        font-size: 1.5em;
-        height: 40%;
-    }
-
-    .btnContainer {
-        margin: 7em 0em;
-    }
-    
-    .game-over-container span {
-        line-height: 1.3em;
-        font-size: 1em;
-        top: 0;
-        margin-top: 1em;
-    }
-
-    .game-over-container span h3 {
-        font-size: 2.1em;
-    }
-
-    .playBtn {
-        font-size: 1.4em;
-    }
-
-    .box {
-        width: 10em;
-        height: 10em;
-    }
-    .box-container {
-        margin-top: 8em;
-    }
+/* Extra large screens, TV */
+@media screen and (min-width: 1201px) {
+    body {
+        overflow: hidden;
+      }
 
 }
 
-/* Tablets */
-@media screen and (min-width: 768px) and (max-width: 1025px) {
+/* Desktops, large screens */
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+    body {
+        overflow: hidden;
+      }
+
+}
+
+/* Small screens, laptops */
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+    #game-wrapper {
+        font-size: 22px;
+    }
+    .game-container, .btnContainer {
+        position: relative;
+        margin-top: 5em;
+    }
+    .game-over-container {
+        height: 50%;
+        width: 75%;
+    }
+
+    .game-over-container span h2 {
+        font-size: 30px;
+    }
+
+    .box {
+        width: 14em;
+        height: 14em;
+    }
+
+    body {
+        overflow: hidden;
+      }
+}
+
+/* iPads, Tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
     #game-wrapper {
         font-size: 22px;
     }
@@ -231,13 +225,18 @@ body {
     }
     .game-over-container {
         height: 45%;
+        width: 75%;
+    }
+
+    .game-over-container span h2 {
+        font-size: 30px;
     }
 }
 
-/* Small Smartphones */
-@media screen and (min-width: 200px) and (max-width: 532px) {
+/* Mobile devices */
+@media screen and (min-width: 320px) and (max-width: 480px) {
     #game-wrapper {
-        font-size:8px;
+        font-size:11px;
     }
 
     .game-btn {
@@ -245,5 +244,22 @@ body {
         margin: 0 1em;
 
     }
+    .game-over-container {
+        height: 45%;
+        width: 75%;
+        position: fixed;
+    }
 
+    .game-over-container span h2 {
+        font-size: 20px;
+    }
+
+    .game-container, .btnContainer {
+        position: relative;
+        margin-top: 3em;
+    }
+
+    .box-container {
+        margin-top: 5em;
+    }
 }
