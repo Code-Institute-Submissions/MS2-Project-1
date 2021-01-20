@@ -54,7 +54,6 @@ const flash = (box) => {
 /*
     Called when a box is clicked to confirm if right or wrong
 */
-
 const boxClicked = boxClicked => {
 	// If game is not in game mode, don't do anything
 	if (!sequenceIsDone) return;
@@ -82,7 +81,6 @@ const boxClicked = boxClicked => {
 /*
     Resets the score when new game starts
 */
-
 function resetScore() {
 	// Reset the score variable and insert it in the HTML
 	score = 0;
@@ -92,7 +90,6 @@ function resetScore() {
 /*
     Inserts the score in the HTML
 */
-
 function setScore(score) {
 	// Insert the score variable in the HTML
 	scoreElement.children[0].innerHTML = score;
@@ -101,7 +98,6 @@ function setScore(score) {
 /*
     Displays the game-over pop-up and text
 */
-
 function handleGameOver() {
 	// Display the game over pop-up and insert text
 	gameOverElem.children[0].innerHTML = `<h2>Game Over</h2> <br> Your score: ${score} <br> Press Start to try again <br> Press Back for homepage`;
@@ -115,7 +111,6 @@ function handleGameOver() {
 /*
     Prepares and starts the flash of the boxes
 */
-
 const startFlashing = async() => {
 	// Add flashing class to game container
 	containerGameElem.classList.add("flashing");
@@ -132,7 +127,6 @@ const startFlashing = async() => {
 /*
     Linked to the play button, when clicked, start the game
 */
-
 function playGame() {
 	// Reset any variables and the sequence, score etc.
 	resetScore();
@@ -150,7 +144,6 @@ function playGame() {
 /*
     Starts the countdown display before box sequence starts to play
 */
-
 function countDown() {
 	// Fetch popup element called countdown and display it
 	countdownElement.style.display = "flex";
@@ -170,7 +163,6 @@ function countDown() {
 /*
     Hides the game-over screen
 */
-
 function hideGameOverPopUp() {
 	// Remove blur from game container
 	containerGameElem.style.filter = "blur(0px)";

@@ -183,7 +183,7 @@ body {
 }
 
 /* Desktops, large screens */
-@media screen and (min-width: 1024px) and (max-width: 1200px) {
+@media screen and (min-width: 1024px) and (max-width: 1980px) {
     body {
         overflow: hidden;
       }

@@ -194,7 +194,7 @@ NOTE: Instead of executing a git rebase , I opted for providing this table relat
 
 | Commit ID        | Commit Message    | Date  |
 | -------- |:-------------:| -----:|
-| 56c8090  |  update text for README | Jan 13, 2021 |
+| 56c8090  | update text for README | Jan 13, 2021 |
 | fd7bad6  | add images into README for texting section     |   Jan 13, 2021 |
 | f496baa  | add README text to Inspiration and UX + fix css syntax + add email at bottom of HTML    |   Jan 10, 2021 |
 | 6fe5f82  | move css into correct headlines + change more class names and variable names   |   Jan 9, 2021 |
